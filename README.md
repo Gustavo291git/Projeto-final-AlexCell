@@ -8,7 +8,7 @@
 **Público-Alvo:** Todas as idades, com foco especial no público jovem, que busca acessórios modernos, funcionais e com design (capinhas, películas, carregadores, etc.).
 
 ## Links do Projeto
-* **Acesse o Site (GitHub Pages):** [INSIRA_AQUI_O_LINK_DO_SEU_GITHUB_PAGES]
+* **Acesse o Site (GitHub Pages):** [https://gustavo291git.github.io/Projeto-final-AlexCell/]
 * **Protótipo (Figma):** [Link do Figma](https://www.figma.com/design/AM3hFSDGQPR5YsCKhPCylh/Prototipo-AlexCell?m=auto&t=JJe4A2IzCWW5t1oA-6)
 
 ## Escolha do Negócio e Potencial
@@ -130,5 +130,6 @@ Logo: Gerado via IA (ChatGPT/DALL-E).
 Integrantes:
 
 Gustavo Monteiro - Desenvolvimento Front-end
+
 
 Arthur Santos - Desenvolvimento Front-end
