@@ -131,5 +131,4 @@ Integrantes:
 
 Gustavo Monteiro - Desenvolvimento Front-end
 
-
 Arthur Santos - Desenvolvimento Front-end
