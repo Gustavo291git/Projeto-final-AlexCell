@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas e Suporte - AlexCell</title>
+    <meta name="description" content="Tire suas dúvidas, faça sugestões e encontre informações sobre parcerias com a AlexCell." />
+    <meta name="keywords" content="FAQ, dúvidas, suporte, parcerias, sugestões, AlexCell" />
+    <meta name="author" content="AlexCell Team" />
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+
+<body>
+    <header class="top-bar" role="search">...</header>
+    
+    <div id="nav-container"></div>
+
+    <main class="page-container">
+        <h2 class="page-title">Dúvidas, Sugestões ou Parcerias</h2>
+        
+        <div class="info-content">
+            <h3>Perguntas Frequentes (FAQ)</h3>
+            <p>
+                <strong>Meu código de rastreio não funciona. O que fazer?</strong><br>
+                O código de rastreio pode levar até 48 horas úteis para ser atualizado no sistema após o envio. Se o problema persistir, entre em contato.
+            </p>
+
+            <h3>Sugestões</h3>
+            <p>Queremos melhorar! Use o nosso formulário de <a href="./contato.html">Fale Conosco</a> para nos enviar sugestões ou ideias.</p>
+
+            <h3>Parcerias</h3>
+            <p>Se você tem interesse em se tornar um parceiro ou fornecedor da AlexCell, envie um e-mail para **parcerias@alexcell.com** com sua proposta detalhada. Avaliaremos o contato o mais breve possível.</p>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+            carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregas e Envios - AlexCell</title>
+
+    <meta name="description" content="Conheça a política de entregas e envios da AlexCell para todo o Brasil." />
+    <meta name="keywords" content="entrega, envio, prazo, frete, rastreio" />
+    <meta name="author" content="AlexCell Team" />
+
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+
+<body>
+    <header class="top-bar" role="search">
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <img src="./img/ChatGPT Image 14_10_2025, 23_50_34.png" alt="Logo da AlexCell" />
+                <h1>AlexCell</h1>
+            </a>
+        </div>
+
+        <div class="search-container">
+            <label for="busca" class="sr-only">O que você procura?</label>
+            <input type="text" id="busca" placeholder="O que você procura?" />
+            <button aria-label="Buscar">
+                <img src="./img/loupe.png" width="20" alt="Ícone de lupa para busca" />
+            </button>
+        </div>
+
+        <div class="header-icons">
+            <a href="./rastreamento.html" class="rastreamento">
+                <button class="botao">Rastrear Pedido</button>
+            </a>
+            <a href="./carrinho.html" aria-label="Carrinho de compras">
+                <button class="botao">
+                    <img src="./img/icons8-compra-24.png" alt="Ícone de carrinho de compras" />
+                </button>
+            </a>
+            <a href="./login.html" aria-label="Acessar perfil">
+                <button class="botao">
+                    <img src="./img/icons8-usuário-homem-com-círculo-24.png" alt="Ícone de perfil de usuário" />
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <div id="nav-container"></div>
+
+    <main class="page-container">
+        <h2 class="page-title">Entregas e Envios</h2>
+
+        <div class="info-content">
+            <h3>Como Funciona o Envio?</h3>
+            <p>Todos os pedidos são processados em até 24 horas úteis após a confirmação do pagamento. Trabalhamos com os Correios e transportadoras privadas para garantir a entrega mais rápida e segura em todo o Brasil.</p>
+
+            <h3>Prazos e Frete</h3>
+            <ul>
+                <li>O prazo de entrega varia de 3 a 15 dias úteis, dependendo da sua região.</li>
+                <li>O frete é calculado no carrinho de compras com base no CEP de destino.</li>
+                <li>Oferecemos frete grátis em compras acima de R$ 300,00.</li>
+            </ul>
+
+            <h3>Rastreamento</h3>
+            <p>Você receberá o código de rastreio por e-mail assim que o pedido for postado. Você pode acompanhá-lo diretamente na nossa <a href="./rastreamento.html">Página de Rastreio</a>.</p>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+            carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+        });
+    </script>
+</body>
+
+</html>

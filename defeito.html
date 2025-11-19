@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto com Defeito - AlexCell</title>
+    <meta name="description" content="Instruções sobre como proceder ao receber um produto com defeito de fábrica ou avaria na AlexCell." />
+    <meta name="keywords" content="defeito, avaria, garantia, troca, assistência, AlexCell" />
+    <meta name="author" content="AlexCell Team" />
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+
+<body>
+    <header class="top-bar" role="search">...</header>
+    
+    <div id="nav-container"></div>
+
+    <main class="page-container">
+        <h2 class="page-title">Produto com Defeito ou Avaria</h2>
+        
+        <div class="info-content">
+            <h3>Garantia de Qualidade</h3>
+            <p>Todos os nossos produtos passam por uma rigorosa inspeção antes do envio. Caso você receba um produto com defeito de fábrica ou avaria causada pelo transporte, garantimos a troca imediata.</p>
+
+            <h3>Como Proceder</h3>
+            <ol>
+                <li>Envie uma foto ou vídeo do defeito para o nosso WhatsApp (número 9999-9999) ou e-mail (alexcell@gmail.com).</li>
+                <li>Inclua o número do seu pedido na mensagem.</li>
+                <li>Nossa equipe de suporte analisará o caso e enviará as instruções para postagem do produto sem custo adicional.</li>
+            </ol>
+
+            <h3 style="color: #f33;">Atenção ao Prazo</h3>
+            <p>O prazo para notificar produtos com defeito de fábrica é de **90 dias** (garantia legal), mas recomendamos que a notificação seja feita em até 7 dias após o recebimento, no caso de avaria de transporte.</p>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+            carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+        });
+    </script>
+</body>
+
+</html>

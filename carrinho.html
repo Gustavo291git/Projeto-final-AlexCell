@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - AlexCell</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <a href="./index.html" style="text-decoration:none; color:white; display:flex; align-items:center; gap:10px;">
+                <img src="./img/ChatGPT Image 14_10_2025, 23_50_34.png" alt="Logo">
+                <h1>AlexCell</h1>
+            </a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="O que você procura?">
+            <button>
+                <img src="./img/loupe.png" width="20">
+            </button>
+        </div>
+
+        <div class="header-icons">
+            <a href="./rastreamento.html">
+                <button class="botao">Rastrear Pedido</button>
+            </a>
+            <a href="./index.html" class="voltar"><button class="botao">Voltar à página inicial</button></a>
+            <a href="./carrinho.html">
+                <button class="botao">
+                    <img src="./img/icons8-compra-24.png">
+                </button>
+            </a>
+            <a href="./login.html">
+                <button class="botao">
+                    <img src="./img/icons8-usuário-homem-com-círculo-24.png">
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <div id="nav-container"></div>
+
+    <main class="page-container">
+        <h2 class="page-title">Seu Carrinho</h2>
+
+        <table class="carrinho-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Qtd</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <img src="./img/capinha iphone.webp" width="50" alt="Capa">
+                            <span>Capa iPhone 13 Transparente</span>
+                        </div>
+                    </td>
+                    <td>R$ 49,90</td>
+                    <td>1</td>
+                    <td>R$ 49,90</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <img src="./img/pelicula.jpeg" width="50" alt="Pelicula">
+                            <span>Película de Vidro 3D</span>
+                        </div>
+                    </td>
+                    <td>R$ 29,90</td>
+                    <td>1</td>
+                    <td>R$ 29,90</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="carrinho-resumo">
+            <p>Total: <span style="color:#f33; font-size:1.5rem;">R$ 79,80</span></p>
+            <button class="btn-finalizar" onclick="alert('Redirecionando para pagamento...')">Finalizar Compra</button>
+            <a href="./index.html" style="display:block; margin-top:15px; font-size:0.9rem; color:#666;">Continuar comprando</a>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+        });
+    </script>
+</body>
+
+</html>

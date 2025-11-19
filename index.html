@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="AlexCell - A melhor loja de celulares, acessórios e assistência técnica. Produtos originais e atendimento especializado." />
+    <meta name="keywords" content="celulares, acessórios, assistência técnica, capinhas, películas, carregadores, AlexCell, tecnologia" />
+    <meta name="author" content="AlexCell Team" />
+
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <title>AlexCell - Página Inicial</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="top-bar" role="search">
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <img src="./img/ChatGPT Image 14_10_2025, 23_50_34.png" alt="Logo da AlexCell" />
+                <h1>AlexCell</h1>
+            </a>
+        </div>
+
+        <div class="search-container">
+            <label for="busca" class="sr-only">O que você procura?</label>
+            <input type="text" id="busca" placeholder="O que você procura?" />
+            <button aria-label="Buscar">
+                <img src="./img/loupe.png" width="20" alt="Ícone de lupa para busca" />
+            </button>
+        </div>
+
+        <div class="header-icons">
+            <a href="./rastreamento.html" class="rastreamento">
+                <button class="botao">Rastrear Pedido</button>
+            </a>
+            <a href="./carrinho.html" aria-label="Carrinho de compras">
+                <button class="botao">
+                    <img src="./img/icons8-compra-24.png" alt="Ícone de carrinho de compras" />
+                </button>
+            </a>
+            <a href="./login.html" aria-label="Acessar perfil">
+                <button class="botao">
+                    <img src="./img/icons8-usuário-homem-com-círculo-24.png" alt="Ícone de perfil de usuário" />
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <div id="nav-container"></div>
+
+    <main id="conteudo-principal">
+        <section class="info-bar" aria-label="Informações de compra">
+            <div>PAGAMENTO À VISTA <br /><span>VIA PIX</span></div>
+            <div>3x SEM JUROS A PARTIR <br /><span>DE R$199,90</span></div>
+            <div>PEDIDO MÍNIMO <br /><span>R$50,00 EM PRODUTOS</span></div>
+            <div>ENVIAMOS PARA TODO O BRASIL <br /><span>POSTAGEM EM ATÉ 24H</span></div>
+        </section>
+
+        <section class="produtos" aria-labelledby="produtos-titulo">
+            <h2 id="produtos-titulo" class="sr-only">Produtos mais vendidos</h2>
+
+            <div class="produto">
+                <div class="img-botao">
+                    <a href="./mais-vendidas-capinhas.html">
+                        <button class="botao-imagens"></button>
+                        <img src="./img/capinha iphone.webp" width="135" alt="Diversas capinhas de iPhone coloridas." loading="lazy" />
+                    </a>
+                </div>
+                <h3>Capinhas mais vendidas</h3>
+            </div>
+
+            <div class="produto">
+                <div class="img-botao">
+                    <a href="./mais-vendidas-peliculas.html">
+                        <button class="botao-imagens"></button>
+                        <img src="./img/pelicula.jpeg" width="135" alt="Uma película protetora para celular." loading="lazy" />
+                    </a>
+                </div>
+                <h3>Películas mais vendidas</h3>
+            </div>
+
+            <div class="produto">
+                <div class="img-botao">
+                    <a href="./mais-vendidas-acessorios.html">
+                        <button class="botao-imagens"></button>
+                        <img src="./img/cabo carregador.webp" width="130" alt="Um cabo de carregador branco enrolado." loading="lazy" />
+                    </a>
+                </div>
+                <h3>Acessórios mais vendidos</h3>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+            carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+        });
+    </script>
+</body>
+
+</html>

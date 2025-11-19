@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessórios Diversos - AlexCell</title>
+    <meta name="description" content="Fones de ouvido, suportes, pop sockets e outros acessórios que complementam seu celular." />
+    <meta name="keywords" content="acessórios, fone de ouvido, suporte, pop socket, gamer, AlexCell" />
+    <meta name="author" content="AlexCell Team" />
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+
+<body>
+    <header class="top-bar" role="search">
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <img src="./img/ChatGPT Image 14_10_2025, 23_50_34.png" alt="Logo da AlexCell" />
+                <h1>AlexCell</h1>
+            </a>
+        </div>
+
+        <div class="search-container">
+            <label for="busca" class="sr-only">O que você procura?</label>
+            <input type="text" id="busca" placeholder="O que você procura?" />
+            <button aria-label="Buscar">
+                <img src="./img/loupe.png" width="20" alt="Ícone de lupa para busca" />
+            </button>
+        </div>
+
+        <div class="header-icons">
+            <a href="./rastreamento.html" class="rastreamento">
+                <button class="botao">Rastrear Pedido</button>
+            </a>
+            <a href="./index.html" class="voltar"><button class="botao">Voltar à página inicial</button></a>
+            <a href="./carrinho.html" aria-label="Carrinho de compras">
+                <button class="botao">
+                    <img src="./img/icons8-compra-24.png" alt="Ícone de carrinho de compras" />
+                </button>
+            </a>
+            <a href="./login.html" aria-label="Acessar perfil">
+                <button class="botao">
+                    <img src="./img/icons8-usuário-homem-com-círculo-24.png" alt="Ícone de perfil de usuário" />
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <div id="nav-container"></div>
+
+    <main class="page-container">
+        <h2 class="page-title">Acessórios Diversos</h2>
+        
+        <div class="product-listing">
+            <aside class="sidebar">
+                <h3>Filtrar por</h3>
+                
+                <div class="filter-group">
+                    <h4>Categoria</h4>
+                    <label>
+                        <input type="checkbox" name="categoria" value="fone"> Fones de Ouvido
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="suporte"> Suportes e Bases
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="limpeza"> Limpeza e Cuidados
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Tipo de Conexão</h4>
+                    <label>
+                        <input type="checkbox" name="conexao" value="bluetooth"> Bluetooth
+                    </label>
+                    <label>
+                        <input type="checkbox" name="conexao" value="cabo"> Com Fio
+                    </label>
+                </div>
+
+                <button class="botao" style="width: 100%; margin-top: 15px;">Aplicar Filtros</button>
+            </aside>
+
+            <section class="product-grid">
+                <a href="#" class="product-card">
+                    <img src="./img/fone bluetooth.webp" alt="Fone de Ouvido Bluetooth" loading="lazy">
+                    <h4>Fone Bluetooth Comfort Fit</h4>
+                    <p>R$ 150,00</p>
+                    <button class="botao" style="padding: 8px 15px;">Comprar</button>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img src="./img/suporte veicular.webp" alt="Suporte Veicular" loading="lazy">
+                    <h4>Suporte Veicular Magnético</h4>
+                    <p>R$ 49,90</p>
+                    <button class="botao" style="padding: 8px 15px;">Comprar</button>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img src="./img/ring light.webp" alt="Ring Light" loading="lazy">
+                    <h4>Ring Light para Selfies e Vídeos</h4>
+                    <p>R$ 99,00</p>
+                    <button class="botao" style="padding: 8px 15px;">Comprar</button>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+            carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos e Notas Fiscais - AlexCell</title>
+
+    <meta name="description" content="Gerencie seus meios de pagamento e acesse suas notas fiscais na AlexCell." />
+    <meta name="keywords" content="pagamento, nota fiscal, cartão, pix, boleto, AlexCell" />
+    <meta name="author" content="AlexCell Team" />
+
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+
+<body>
+    <header class="top-bar" role="search">...</header>
+    
+    <div id="nav-container"></div>
+
+    <main class="page-container">
+        <h2 class="page-title">Pagamentos e Notas Fiscais</h2>
+        
+        <div class="info-content">
+            <h3>Meios de Pagamento</h3>
+            <p>Aceitamos as principais bandeiras de cartão de crédito (com parcelamento em até 3x sem juros a partir de R$199,90), PIX (com desconto de 5% à vista) e Boleto Bancário.</p>
+
+            <h3>Cadastrar Novo Cartão (Simulação)</h3>
+            <form class="form-container" style="max-width: 400px; margin: 20px auto;">
+                <label>Número do Cartão:</label>
+                <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+                
+                <label>Nome Impresso:</label>
+                <input type="text">
+                
+                <label>Validade / CVV:</label>
+                <input type="text" placeholder="MM/AA / XXX">
+                
+                <button type="submit" class="botao" style="width: 100%;">Salvar Cartão</button>
+            </form>
+
+            <h3>Segunda Via da Nota Fiscal</h3>
+            <p>Para obter a segunda via da sua Nota Fiscal, preencha o formulário com o número do seu pedido e CPF. A Nota será enviada automaticamente para o seu e-mail de cadastro.</p>
+            
+            <form class="form-container" style="max-width: 400px; margin: 20px auto;">
+                <label>Número do Pedido:</label>
+                <input type="text">
+                
+                <label>CPF/CNPJ:</label>
+                <input type="text">
+                
+                <button type="submit" class="botao-separado" style="width: 100%; border:1px solid #f33;">Emitir 2ª Via</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            carregarComponente("componentes/nav.html", "#nav-container");
+            carregarComponente("componentes/footer.html", "#footer-container");
+            carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+            carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+        });
+    </script>
+</body>
+
+</html>

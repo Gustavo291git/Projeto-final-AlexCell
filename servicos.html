@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Central de Ajuda AlexCell. Encontre informações sobre entregas, pagamentos, trocas e devoluções." />
+    <meta name="keywords" content="ajuda, suporte, entregas, pagamentos, trocas, AlexCell" />
+    <meta name="author" content="AlexCell Team" />
+    <link rel="icon" href="./img/logo preta.png" type="image/png" />
+    <title>AlexCell - Ajuda e Serviços</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+  </head>
+  <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="top-bar" role="search">
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <img src="./img/ChatGPT Image 14_10_2025, 23_50_34.png" alt="Logo da AlexCell" />
+                <h1>AlexCell</h1>
+            </a>
+        </div>
+        <div class="search-container">
+            <label for="busca-ajuda" class="sr-only">Olá, como podemos ajudar você?</label>
+            <input type="text" id="busca-ajuda" placeholder="Olá, como podemos ajudar você?" />
+            <button aria-label="Buscar ajuda"><img src="./img/loupe.png" width="20" alt="Ícone de lupa para busca" /></button>
+        </div>
+        <div class="header-links">
+            <a href="./index.html" class="voltar"><button class="botao">Voltar à página inicial</button></a>
+            <a href="./meus-pedidos.html" class="pedidos"><button class="botao-separado">Meus pedidos</button></a>
+        </div>
+    </header>
+
+    <div id="nav-container"></div>
+
+    <main id="conteudo-principal" class="ajuda">
+      <a href="./entregas.html" style="text-decoration:none;"><div class="card"><div class="img-placeholder"><img src="./img/entrega-rapida.png" alt="Ícone de um caminhão de entrega" width="90" /></div><p>Entregas e envios</p></div></a>
+      <a href="./duvidas.html" style="text-decoration:none;"><div class="card"><div class="img-placeholder"><img src="./img/balao-de-fala.png" alt="Ícone de um balão de fala para dúvidas" width="90" /></div><p>Dúvidas, sugestões<br />ou parcerias</p></div></a>
+      <a href="./pagamentos.html" style="text-decoration:none;"><div class="card"><div class="img-placeholder"><img src="./img/dinheiro.png" alt="Ícone de uma nota de dinheiro" width="90" /></div><p>Pagamentos e<br />notas fiscais</p></div></a>
+      <a href="./cupons.html" style="text-decoration:none;"><div class="card"><div class="img-placeholder"><img src="./img/voucher-de-desconto.png" alt="Ícone de um cupom de desconto" width="90" /></div><p>Promoções e<br />cupons</p></div></a>
+      <a href="./trocas.html" style="text-decoration:none;"><div class="card"><div class="img-placeholder"><img src="./img/icons8-dados-em-ambas-as-direções-32.png" alt="Ícone de duas setas indicando troca" width="90" /></div><p>Trocas e<br />cancelamentos</p></div></a>
+      <a href="./defeito.html" style="text-decoration:none;"><div class="card"><div class="img-placeholder"><img src="./img/icons8-aviso-58.png" alt="Ícone de um triângulo de aviso de defeito" width="90" /></div><p>Produto com<br />defeito</p></div></a>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+    <div id="back-to-top-container"></div>
+
+    <script src="js/componentes.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        carregarComponente("componentes/nav.html", "#nav-container");
+        carregarComponente("componentes/footer.html", "#footer-container");
+        carregarComponente("componentes/whatsapp-button.html", "#whatsapp-container");
+        carregarComponente("componentes/back-to-top.html", "#back-to-top-container");
+      });
+    </script>
+  </body>
+</html>
